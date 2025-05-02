@@ -22,13 +22,15 @@ Nano/Vim – Command line editing for commits
 Branching (dev/main) – Safe Git workflow management
 
 📁 Project Structure
-auto-deploy-static-site/
-├── index.html
-├── styles.css
-└── .github/
-  └── workflows/
-    └── deploy.yml
-
+cpp
+Copy
+Edit
+auto-deploy-static-site/  
+├── index.html  
+├── styles.css  
+└── .github/  
+    └── workflows/  
+        └── deploy.yml  
 🔄 Workflow Summary
 Code is developed in the dev branch
 
@@ -52,3 +54,4 @@ Deploys to the gh-pages branch using the GitHub token
 👤 Author
 Built by @eli-sep –
 My first DevOps-style GitHub project, featuring automated CI/CD, branching strategies, version control, and a fully live auto-updating site.
+
