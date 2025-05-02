@@ -1,3 +1,4 @@
+![Project Screenshot](screenshot.png)
 Auto Deploy Static Site 🚀
 Live Demo:
 🌐 https://eli-sep.github.io/auto-deploy-static-site/
