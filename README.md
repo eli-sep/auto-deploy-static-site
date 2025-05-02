@@ -4,16 +4,22 @@ Live Demo:
 🌐 https://eli-sep.github.io/auto-deploy-static-site/
 
 📌 Overview
-This project showcases a fully automated deployment pipeline using GitHub Actions and GitHub Pages. Whenever you push changes to the main branch, a workflow automatically publishes the latest version to the live web using the gh-pages branch — with zero manual steps.
+This project demonstrates a fully automated static website deployment pipeline using GitHub Actions and GitHub Pages. Every time a change is pushed to the main branch, GitHub Actions builds and publishes the site live using the gh-pages branch — with zero manual steps required.
+
+This project also features a clean dev → main Git workflow for safe development and testing.
 
 🛠 Technologies Used
 HTML & CSS – Static site content
 
 Git & GitHub – Version control and repo hosting
 
-GitHub Actions – CI/CD automation
+GitHub Actions – CI/CD workflow automation
 
 GitHub Pages – Static site hosting
+
+Nano/Vim – Command line editing for commits
+
+Branching (dev/main) – Safe Git workflow management
 
 📁 Project Structure
 auto-deploy-static-site/
@@ -23,26 +29,26 @@ auto-deploy-static-site/
   └── workflows/
     └── deploy.yml
 
-🔄 How It Works
-You push a change to the main branch
+🔄 Workflow Summary
+Code is developed in the dev branch
 
-GitHub Actions runs the deploy.yml workflow
+When ready, changes are merged into main
 
-It uses peaceiris/actions-gh-pages to push your files to the gh-pages branch
+GitHub Actions triggers a workflow
 
-GitHub Pages serves the content from gh-pages to the public web
+The workflow pushes the deploy-ready code to the gh-pages branch
 
-⚙️ GitHub Actions Workflow Summary
-The deployment workflow is configured to:
+GitHub Pages serves the site publicly from the gh-pages branch
 
-Trigger on every push to main
+⚙️ GitHub Actions Workflow Highlights
+Triggers on every push to main
 
-Use the GitHub token for secure access
+Uses peaceiris/actions-gh-pages to deploy
 
-Deploy the root directory (./) to the gh-pages branch
+Publishes directly from the root directory (./)
 
-This setup gives you a clean and automated CI/CD process for static sites.
+Deploys to the gh-pages branch using the GitHub token
 
 👤 Author
-Built by @eli-sep
-My first DevOps-style GitHub project using Actions + Pages 🚀
+Built by @eli-sep –
+My first DevOps-style GitHub project, featuring automated CI/CD, branching strategies, version control, and a fully live auto-updating site.
