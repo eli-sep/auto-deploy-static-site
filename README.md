@@ -1,4 +1,4 @@
-![Project Screenshot](screenshot.png)
+![Project Screenshot](Webpage_Screenshot.png)
 Auto Deploy Static Site 🚀
 Live Demo:
 🌐 https://eli-sep.github.io/auto-deploy-static-site/
